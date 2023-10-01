@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>: ♥ Avengers ♥ :</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <img src="imagens/Marvel.png" alt="" class="header_logo">
+            <span id="hamburguer" class="material-symbols-rounded">
+                menu
+            </span>
+            
+            <nav id="itens_menu" class="header-nav">
+                <ul>
+                    <li><a href="#" target="_home">Menu01</a></li>
+                    <li><a href="#" target="_home">Menu02</a></li>
+                    <li><a href="#" target="_home">Menu03</a></li>
+                    <li><a href="#" target="_home">Menu04</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            var hamburguer = document.getElementById('hamburguer');
+            var itensMenu = document.getElementById('itens_menu');
+
+            hamburguer.addEventListener('click', aparecer);
+
+            function aparecer(){
+                if(itensMenu.style.display == 'block'){
+                    itensMenu.classList.remove('show');
+                }else{
+                    itensMenu.classList.toggle('show');
+                }
+            }
+        </script>
+
+        <main>
+            <section class="trailer">
+                <div class="maxwidth">
+                    <h1 class="trailer_title">
+                        Ms. Marvels
+                    </h1>
+                    <p class="trailer_paragrafo">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Qui laudantium atque rem fugiat sequi animi. Culpa at hic, architecto voluptates quasi odit repellat eum quos rem alias illum!
+                        Harum ipsam labore earum voluptate, repellendus hic quis facilis deserunt odit eius possimus modi nisi veritatis soluta ea totam iste impedit quia! Ex magni quo, eaque saepe aliquid repellendus assumenda.
+                        Hic, fugiat corrupti. Quibusdam quas minima repellat cumque excepturi eaque alias laborum voluptates repudiandae ex sunt fugiat, quam consequatur odit error optio dolores magni autem architecto aliquam minus! Voluptas, nihil?
+                    </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GhG6iGHBLoM?si=IPBcVyGi3UvwOGGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <a href="#" target="_blank" class="trailer_botao">Trailer oficial</a>
+                </div>
+            </section>
+
+            <section class="main_content">
+                <div class="maxwidth row">
+                    <article class="col col-12 col-6">
+                        <h2 class="main_content_title">Marvel</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam nobis praesentium odit aut iusto accusantium culpa cumque cum aliquam repellendus.
+                        </p>
+                    </article>
+
+                    <article class="col col-12 col-6">
+                        <img src="imagens/marvels2.jpg" alt="Marvels2" class="icon_img">
+                    </article>
+                </div>
+
+            </section>
+        </main>
+
+        <main>
+            <h1>Avengers Assemble</h1>
+
+            <section class="cards_container">
+                <div class="card">
+                    <img class="tamanho" src="imagens/marvels1.jpg" alt="">
+                    <p>The Marvels</p>
+                </div>
+
+                <div class="card">
+                    <img class="tamanho" src="imagens/marvels2.jpg" alt="">
+                    <p>Eternals</p>
+                </div>
+
+                <div class="card">
+                    <img class="tamanho" src="imagens/marvels6.jpg" alt="">
+                    <p>Black Widow</p>
+                </div>
+
+                <div class="card">
+                    <img class="tamanho" src="imagens/marvels9.jpg" alt="">
+                    <p>The Legend</p>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            Elas na Tech 2023 ♥ Luciana
+        </footer>
+        
+    </body>
+</html>
